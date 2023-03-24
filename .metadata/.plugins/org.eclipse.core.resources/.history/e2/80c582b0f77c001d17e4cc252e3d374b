@@ -1,0 +1,14 @@
+package com.Scanner;
+
+public class C {
+
+	public void C1() {
+		int b=100;
+		System.out.println(b);
+	}
+	public static void main(String[] args) {
+		int b =200;
+		
+		System.out.println(b);
+	}
+}

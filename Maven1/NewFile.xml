@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Testing_Basics">
+	<test name="fist_test_suite">
+		<classes>
+			<class name="TestNG.Basics">
+
+			</class>
+
+
+		</classes>
+
+	</test>
+
+</suite>

@@ -1,0 +1,29 @@
+package com.facebook.stepdefinition;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class Stepdef extends Base_Class1 {
+	@Given("Useer enter into Adactin Home page")
+	public void useer_enter_into_adactin_home_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	@When("User enter the username in the username field")
+	public void user_enter_the_username_in_the_username_field() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	@When("User enter the password in the password field")
+	public void user_enter_the_password_in_the_password_field() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+	@Then("user click the login button")
+	public void user_click_the_login_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new io.cucumber.java.PendingException();
+	}
+
+}

@@ -1,0 +1,27 @@
+package com.Scanner;
+
+public class A {
+
+	public void A1(){
+
+		System.out.println("This is Method A1");
+							   }
+
+		public void A2(){
+		System.out.println("This is Method A2");
+							   }
+					  }
+
+		public class B extends Class A{
+
+		public static void main(String[] args){
+		Class A aobj = new class A();
+
+		aobj.A1();
+		aobj.A2();
+
+											  }
+
+	
+	
+}

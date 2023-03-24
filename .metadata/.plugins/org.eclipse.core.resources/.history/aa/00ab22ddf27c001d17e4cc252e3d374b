@@ -1,0 +1,20 @@
+package com.Scanner;
+
+public class B {
+
+	public class B extends Class A{
+
+		public static void main(String[] args){
+		Class A aobj = new class A();
+
+		aobj.A1();
+		aobj.A2();
+
+											  }
+
+	
+	
+}
+
+	
+}

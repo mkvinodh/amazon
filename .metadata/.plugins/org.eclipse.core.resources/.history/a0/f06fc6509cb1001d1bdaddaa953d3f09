@@ -1,0 +1,17 @@
+package MAVEN_PROJECT.Maven1;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class Data_Driven_Demo {
+	
+	public void to_Read_Data() throws Throwable {
+		File source = new File("C:\\Users\\Vinod M\\eclipse-workspace\\Maven1\\data\\Vinod.xlsx");
+		FileInputStream input = new FileInputStream(source);
+		Workbook work = new xssfwWorkbook
+		
+		
+	}
+
+}

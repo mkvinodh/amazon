@@ -1,0 +1,10 @@
+package com.Test1;
+
+public class Child_Ex1 extends Ex1{
+	
+	public void test1() {
+		
+		System.out.println("child class");
+	}
+
+}

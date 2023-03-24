@@ -1,0 +1,38 @@
+package MAVEN_PROJECT.Maven1;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Base_Class {
+
+	static WebDriverManager abc;
+	static WebDriver driver;
+	
+	public static void browser_Launch(String browser_Type) {
+		
+		if(browser_Type.equalsIgnoreCase("chrome"));{
+			abc.chromedriver().setup();
+			ChromeOptions opt = new ChromeOptions();
+			driver = new ChromeDriver(opt);
+		} else if(browser_Type.equalsIgnoreCase("edge"));{
+			abc.edgedriver().setup();
+			EdgeOptions opt = new EdgeOptions();
+			driver = new EdgeDriver(opt);
+		} else if(browser_Type.equalsIgnoreCase("firefox");{
+			abc.firefoxdriver().setup();
+			FirefoxOptions opt = new FirefoxOptions();
+			driver = new FirefoxDriver(opt);
+		} else if(browser_Type.equalsIgnoreCase("explorer")) {
+			abc.iedriver().setup();
+			driver = new InternetExplorerDriver();
+		}
+	}
+}

@@ -1,0 +1,55 @@
+package com.facebook.stepdefinition;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+import io.cucumber.java.Before;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class Abc_def {
+	static WebDriver driver;
+	@Before
+	public static void browser_Launch() {
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions opt = new ChromeOptions();
+		opt.addArguments("--remote-allow-origins=*");
+		driver = new ChromeDriver(opt);
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	}
+
+	@Given("User enter into the Home page")
+	public void user_enter_into_the_home_page() {
+		driver.get("https://www.amazon.in/");
+	}
+
+	@When("User search the {string}")
+	public void user_search_the(String string) {
+		WebElement input = driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"));
+		input.sendKeys(string);
+		
+		// Write code here that turns the phrase above into concrete actions
+		throw new io.cucumber.java.PendingException();
+	}
+
+	@When("User click on his favourite choice")
+	public void user_click_on_his_favourite_choice() {
+		// Write code here that turns the phrase above into concrete actions
+		throw new io.cucumber.java.PendingException();
+	}
+
+	@Then("user click the add to cart product details page")
+	public void user_click_the_add_to_cart_product_details_page() {
+		// Write code here that turns the phrase above into concrete actions
+		throw new io.cucumber.java.PendingException();
+	}
+
+}

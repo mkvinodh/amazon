@@ -1,0 +1,6 @@
+Feature: Going to check amazon home page
+Scenario: To check amazon login scenario
+Given Useer enter into amazon Home page
+When User enter the username in the username field
+And User enter the password in the password field
+Then user click the login button

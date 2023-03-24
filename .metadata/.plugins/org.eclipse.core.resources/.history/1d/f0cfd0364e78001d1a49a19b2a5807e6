@@ -1,0 +1,21 @@
+package com.Scanner;
+
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Treee_Set {
+
+	public static void main(String[] args) {
+		Set<Object> t = new TreeSet<Object>();
+		
+		t.add("Aditya");
+		t.add("Sugi");
+		t.add("Vinod");
+		t.add("Vinod");
+		t.add();
+		t.add("10");
+		t.add("Kans");
+		System.out.println(t);
+	}
+	
+}

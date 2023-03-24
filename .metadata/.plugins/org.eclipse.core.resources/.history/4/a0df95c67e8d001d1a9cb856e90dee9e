@@ -1,0 +1,32 @@
+package com.Selenium1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class fkart {
+	
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Vinod M\\eclipse-workspace\\Selenium23\\Driver\\chromedriver.exe");
+		
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.facebook.com/");
+		driver.manage().window().maximize();
+		
+		WebElement mail= driver.findElement(By.id("email"));
+		mail.sendKeys("vinod@gmail.com");
+		
+		WebElement pwd = driver.findElement(By.name("pass"));
+		
+		pwd.sendKeys("32jhdf3443");
+		
+		WebElement log = driver.findElement(By.name("login"));
+		
+		log.click();
+		
+	}
+
+}

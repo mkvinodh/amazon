@@ -1,0 +1,15 @@
+package com.Scanner;
+
+public class A {
+
+	public void A1(){
+
+		System.out.println("This is Method A1");
+							   }
+
+		public void A2(){
+		System.out.println("This is Method A2");
+							   
+					  }
+
+		
